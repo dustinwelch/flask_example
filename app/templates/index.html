@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<head>
+	<title>Example</title>
+</head>
+{% endblock title %}
+<!--<style>
+	.button{
+		color: #000;
+		float: left;
+		font-size: 28px;
+		font-weight: bold;
+		}
+</style>-->
+{% block content %}
+<body>
+	<h1 id='text'>Here's my example</h1>
+	<button id='change'onClick=change_text()>Click to Change Text</button>
+</body>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function change_text(){	
+	document.getElementById('text').innerHTML = 'changed'
+	}
+</script>
+{% endblock scripts %}
